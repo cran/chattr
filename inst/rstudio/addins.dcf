@@ -1,0 +1,9 @@
+Name: Send prompt
+Description: Sends the highlighted text as the prompt to the LLM
+Binding: chattr
+Interactive: true
+
+Name: Open Chat
+Description: Opens the chat app as a Shiny Gadget
+Binding: chattr_app
+Interactive: true
