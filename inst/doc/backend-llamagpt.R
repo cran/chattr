@@ -16,7 +16,7 @@ chattr_defaults()
 chattr_defaults(path = "[path to compiled program]", model = "[path to model]")
 
 ## ----eval = FALSE-------------------------------------------------------------
-#  chattr_defaults_save()
+# chattr_defaults_save()
 
 ## -----------------------------------------------------------------------------
 chattr_defaults()$model_arguments
