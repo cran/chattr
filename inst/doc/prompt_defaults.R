@@ -7,7 +7,7 @@ knitr::opts_chunk$set(
 ## -----------------------------------------------------------------------------
 library(chattr)
 
-chattr_use("gpt4")
+chattr_use("ollama")
 
 chattr_defaults()
 

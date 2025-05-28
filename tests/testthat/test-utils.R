@@ -1,5 +1,5 @@
 test_that("Creation and printing ch_request objects", {
-  def <- test_simulate_model("gpt35.yml")
+  def <- test_simulate_model("gpt41.yml")
   x <- list()
   x$provider <- "Test Provider"
   x$type <- "chat"
@@ -13,5 +13,11 @@ test_that("UI Validation works", {
 test_that("OS functions work", {
   expect_true(
     os_get() %in% c("mac", "win", "unix")
+  )
+})
+
+test_that("Print history works", {
+  expect_snapshot(
+    print_history(list(list(role = "user", content = "test")))
   )
 })

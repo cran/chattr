@@ -347,39 +347,31 @@ R object. The object can be accessed via the function
 <code>chattr_defaults()</code>:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(chattr)</span>
 <span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="fu">chattr_use</span>(<span class="st">&quot;gpt4&quot;</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="fu">chattr_use</span>(<span class="st">&quot;ollama&quot;</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="co">#&gt; ── chattr</span></span>
-<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="co">#&gt; • Provider: OpenAI - Chat Completions</span></span>
-<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="co">#&gt; • Path/URL: https://api.openai.com/v1/chat/completions</span></span>
-<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="co">#&gt; • Model: gpt-4</span></span>
-<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a><span class="co">#&gt; • Label: GPT 4 (OpenAI)</span></span>
-<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a><span class="fu">chattr_defaults</span>()</span>
-<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a><span class="co">#&gt; ── chattr ──────────────────────────────────────────────────────────────────────</span></span>
-<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a><span class="co">#&gt; ── Defaults for: Default ──</span></span>
-<span id="cb1-16"><a href="#cb1-16" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb1-17"><a href="#cb1-17" tabindex="-1"></a><span class="co">#&gt; ── Prompt:</span></span>
-<span id="cb1-18"><a href="#cb1-18" tabindex="-1"></a><span class="co">#&gt; • {{readLines(system.file(&#39;prompt/base.txt&#39;, package = &#39;chattr&#39;))}}</span></span>
-<span id="cb1-19"><a href="#cb1-19" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb1-20"><a href="#cb1-20" tabindex="-1"></a><span class="co">#&gt; ── Model</span></span>
-<span id="cb1-21"><a href="#cb1-21" tabindex="-1"></a><span class="co">#&gt; • Provider: OpenAI - Chat Completions</span></span>
-<span id="cb1-22"><a href="#cb1-22" tabindex="-1"></a><span class="co">#&gt; • Path/URL: https://api.openai.com/v1/chat/completions</span></span>
-<span id="cb1-23"><a href="#cb1-23" tabindex="-1"></a><span class="co">#&gt; • Model: gpt-4</span></span>
-<span id="cb1-24"><a href="#cb1-24" tabindex="-1"></a><span class="co">#&gt; • Label: GPT 4 (OpenAI)</span></span>
-<span id="cb1-25"><a href="#cb1-25" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb1-26"><a href="#cb1-26" tabindex="-1"></a><span class="co">#&gt; ── Model Arguments:</span></span>
-<span id="cb1-27"><a href="#cb1-27" tabindex="-1"></a><span class="co">#&gt; • temperature: 0.01</span></span>
-<span id="cb1-28"><a href="#cb1-28" tabindex="-1"></a><span class="co">#&gt; • max_tokens: 1000</span></span>
-<span id="cb1-29"><a href="#cb1-29" tabindex="-1"></a><span class="co">#&gt; • stream: TRUE</span></span>
-<span id="cb1-30"><a href="#cb1-30" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb1-31"><a href="#cb1-31" tabindex="-1"></a><span class="co">#&gt; ── Context:</span></span>
-<span id="cb1-32"><a href="#cb1-32" tabindex="-1"></a><span class="co">#&gt; Max Data Files: 0</span></span>
-<span id="cb1-33"><a href="#cb1-33" tabindex="-1"></a><span class="co">#&gt; Max Data Frames: 0</span></span>
-<span id="cb1-34"><a href="#cb1-34" tabindex="-1"></a><span class="co">#&gt; ✔ Chat History</span></span>
-<span id="cb1-35"><a href="#cb1-35" tabindex="-1"></a><span class="co">#&gt; ✖ Document contents</span></span></code></pre></div>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="co">#&gt; • Provider: Ollama</span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="co">#&gt; • Model: llama3.2</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="co">#&gt; • Label: Llama 3.2 (Ollama)</span></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a><span class="fu">chattr_defaults</span>()</span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a><span class="co">#&gt; ── chattr ──────────────────────────────────────────────────────────────────────</span></span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a><span class="co">#&gt; ── Defaults for: Default ──</span></span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb1-16"><a href="#cb1-16" tabindex="-1"></a><span class="co">#&gt; ── Prompt:</span></span>
+<span id="cb1-17"><a href="#cb1-17" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb1-18"><a href="#cb1-18" tabindex="-1"></a><span class="co">#&gt; ── Model</span></span>
+<span id="cb1-19"><a href="#cb1-19" tabindex="-1"></a><span class="co">#&gt; • Provider: Ollama</span></span>
+<span id="cb1-20"><a href="#cb1-20" tabindex="-1"></a><span class="co">#&gt; • Model: llama3.2</span></span>
+<span id="cb1-21"><a href="#cb1-21" tabindex="-1"></a><span class="co">#&gt; • Label: Llama 3.2 (Ollama)</span></span>
+<span id="cb1-22"><a href="#cb1-22" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb1-23"><a href="#cb1-23" tabindex="-1"></a><span class="co">#&gt; ── Context:</span></span>
+<span id="cb1-24"><a href="#cb1-24" tabindex="-1"></a><span class="co">#&gt; Max Data Files: 0</span></span>
+<span id="cb1-25"><a href="#cb1-25" tabindex="-1"></a><span class="co">#&gt; Max Data Frames: 0</span></span>
+<span id="cb1-26"><a href="#cb1-26" tabindex="-1"></a><span class="co">#&gt; ✖ Chat History</span></span>
+<span id="cb1-27"><a href="#cb1-27" tabindex="-1"></a><span class="co">#&gt; ✖ Document contents</span></span></code></pre></div>
 <p><strong>NOTE:</strong> - For most users, this change will not work
 because accessing GPT 4 via the REST API endpoints is currently
 restricted to a few developers.</p>
@@ -406,21 +398,15 @@ currently in your R session that contain “x”:</p>
 <span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a><span class="co">#&gt; • {{ my_list() }}</span></span>
 <span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a><span class="co">#&gt; ── Model</span></span>
-<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="co">#&gt; • Provider: OpenAI - Chat Completions</span></span>
-<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a><span class="co">#&gt; • Path/URL: https://api.openai.com/v1/chat/completions</span></span>
-<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a><span class="co">#&gt; • Model: gpt-4</span></span>
-<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a><span class="co">#&gt; • Label: GPT 4 (OpenAI)</span></span>
-<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a><span class="co">#&gt; ── Model Arguments:</span></span>
-<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a><span class="co">#&gt; • temperature: 0.01</span></span>
-<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a><span class="co">#&gt; • max_tokens: 1000</span></span>
-<span id="cb3-19"><a href="#cb3-19" tabindex="-1"></a><span class="co">#&gt; • stream: TRUE</span></span>
-<span id="cb3-20"><a href="#cb3-20" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb3-21"><a href="#cb3-21" tabindex="-1"></a><span class="co">#&gt; ── Context:</span></span>
-<span id="cb3-22"><a href="#cb3-22" tabindex="-1"></a><span class="co">#&gt; Max Data Files: 0</span></span>
-<span id="cb3-23"><a href="#cb3-23" tabindex="-1"></a><span class="co">#&gt; Max Data Frames: 0</span></span>
-<span id="cb3-24"><a href="#cb3-24" tabindex="-1"></a><span class="co">#&gt; ✔ Chat History</span></span>
-<span id="cb3-25"><a href="#cb3-25" tabindex="-1"></a><span class="co">#&gt; ✖ Document contents</span></span></code></pre></div>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="co">#&gt; • Provider: Ollama</span></span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a><span class="co">#&gt; • Model: llama3.2</span></span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a><span class="co">#&gt; • Label: Llama 3.2 (Ollama)</span></span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a><span class="co">#&gt; ── Context:</span></span>
+<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a><span class="co">#&gt; Max Data Files: 0</span></span>
+<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a><span class="co">#&gt; Max Data Frames: 0</span></span>
+<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a><span class="co">#&gt; ✖ Chat History</span></span>
+<span id="cb3-19"><a href="#cb3-19" tabindex="-1"></a><span class="co">#&gt; ✖ Document contents</span></span></code></pre></div>
 <p>Now we can test it, by setting two variables that start with “x”</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>x1 <span class="ot">&lt;-</span> <span class="dv">1</span></span>
 <span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>x2 <span class="ot">&lt;-</span> <span class="dv">2</span></span></code></pre></div>
@@ -432,22 +418,11 @@ part of the prompt:</p>
 <span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="co">#&gt; ── chattr ──────────────────────────────────────────────────────────────────────</span></span>
 <span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="co">#&gt; ── Preview for: Console</span></span>
-<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a><span class="co">#&gt; • Provider: OpenAI - Chat Completions</span></span>
-<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="co">#&gt; • Path/URL: https://api.openai.com/v1/chat/completions</span></span>
-<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a><span class="co">#&gt; • Model: gpt-4</span></span>
-<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a><span class="co">#&gt; • Label: GPT 4 (OpenAI)</span></span>
-<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a><span class="co">#&gt; • temperature: 0.01</span></span>
-<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a><span class="co">#&gt; • max_tokens: 1000</span></span>
-<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a><span class="co">#&gt; • stream: TRUE</span></span>
-<span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb5-14"><a href="#cb5-14" tabindex="-1"></a><span class="co">#&gt; ── Prompt:</span></span>
-<span id="cb5-15"><a href="#cb5-15" tabindex="-1"></a><span class="co">#&gt; role: system</span></span>
-<span id="cb5-16"><a href="#cb5-16" tabindex="-1"></a><span class="co">#&gt; content: You are a helpful coding assistant</span></span>
-<span id="cb5-17"><a href="#cb5-17" tabindex="-1"></a><span class="co">#&gt; role: user</span></span>
-<span id="cb5-18"><a href="#cb5-18" tabindex="-1"></a><span class="co">#&gt; content:</span></span>
-<span id="cb5-19"><a href="#cb5-19" tabindex="-1"></a><span class="co">#&gt; * x1</span></span>
-<span id="cb5-20"><a href="#cb5-20" tabindex="-1"></a><span class="co">#&gt; * x2</span></span>
-<span id="cb5-21"><a href="#cb5-21" tabindex="-1"></a><span class="co">#&gt; [Your future prompt goes here]</span></span></code></pre></div>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a><span class="co">#&gt; • Provider: Ollama</span></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="co">#&gt; • Model: llama3.2</span></span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a><span class="co">#&gt; • Label: Llama 3.2 (Ollama)</span></span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a><span class="co">#&gt; ── Prompt:</span></span></code></pre></div>
 <p>We can see how the adding a new variable will modify the prompt with
 out us having to modify <code>chattr_defaults()</code>:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>x3 <span class="ot">&lt;-</span> <span class="dv">3</span></span>
@@ -457,23 +432,11 @@ out us having to modify <code>chattr_defaults()</code>:</p>
 <span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a><span class="co">#&gt; ── chattr ──────────────────────────────────────────────────────────────────────</span></span>
 <span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="co">#&gt; ── Preview for: Console</span></span>
-<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a><span class="co">#&gt; • Provider: OpenAI - Chat Completions</span></span>
-<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a><span class="co">#&gt; • Path/URL: https://api.openai.com/v1/chat/completions</span></span>
-<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="co">#&gt; • Model: gpt-4</span></span>
-<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a><span class="co">#&gt; • Label: GPT 4 (OpenAI)</span></span>
-<span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a><span class="co">#&gt; • temperature: 0.01</span></span>
-<span id="cb6-13"><a href="#cb6-13" tabindex="-1"></a><span class="co">#&gt; • max_tokens: 1000</span></span>
-<span id="cb6-14"><a href="#cb6-14" tabindex="-1"></a><span class="co">#&gt; • stream: TRUE</span></span>
-<span id="cb6-15"><a href="#cb6-15" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb6-16"><a href="#cb6-16" tabindex="-1"></a><span class="co">#&gt; ── Prompt:</span></span>
-<span id="cb6-17"><a href="#cb6-17" tabindex="-1"></a><span class="co">#&gt; role: system</span></span>
-<span id="cb6-18"><a href="#cb6-18" tabindex="-1"></a><span class="co">#&gt; content: You are a helpful coding assistant</span></span>
-<span id="cb6-19"><a href="#cb6-19" tabindex="-1"></a><span class="co">#&gt; role: user</span></span>
-<span id="cb6-20"><a href="#cb6-20" tabindex="-1"></a><span class="co">#&gt; content:</span></span>
-<span id="cb6-21"><a href="#cb6-21" tabindex="-1"></a><span class="co">#&gt; * x1</span></span>
-<span id="cb6-22"><a href="#cb6-22" tabindex="-1"></a><span class="co">#&gt; * x2</span></span>
-<span id="cb6-23"><a href="#cb6-23" tabindex="-1"></a><span class="co">#&gt; * x3</span></span>
-<span id="cb6-24"><a href="#cb6-24" tabindex="-1"></a><span class="co">#&gt; [Your future prompt goes here]</span></span></code></pre></div>
+<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a><span class="co">#&gt; • Provider: Ollama</span></span>
+<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a><span class="co">#&gt; • Model: llama3.2</span></span>
+<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="co">#&gt; • Label: Llama 3.2 (Ollama)</span></span>
+<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a><span class="co">#&gt; ── Prompt:</span></span></code></pre></div>
 </div>
 
 

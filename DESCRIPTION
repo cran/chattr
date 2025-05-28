@@ -1,6 +1,6 @@
 Package: chattr
 Title: Interact with Large Language Models in 'RStudio'
-Version: 0.2.1
+Version: 0.3.0
 Authors@R: c(
   person("Edgar", "Ruiz", , "edgar@posit.co", role = c("aut", "cre")),
   person(given = "Posit Software, PBC", role = c("cph", "fnd"))
@@ -16,18 +16,18 @@ BugReports: https://github.com/mlverse/chattr/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 RoxygenNote: 7.3.2
-Imports: rstudioapi, lifecycle, processx, jsonlite, config, httr2 (>=
-        1.1.0), purrr, rlang, bslib, shiny, clipr, callr, yaml, glue,
-        cli, fs
+Imports: rstudioapi, lifecycle, processx, config, ellmer (>= 0.2.0),
+        purrr, rlang, bslib, shiny, clipr, httr2 (>= 1.1.0), yaml,
+        glue, coro, cli, fs
 Depends: R (>= 2.10)
 Suggests: covr, knitr, rmarkdown, testthat (>= 3.0.0), shinytest2,
         withr
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2025-01-30 20:07:24 UTC; edgar
+Packaged: 2025-05-28 18:14:47 UTC; edgar
 Author: Edgar Ruiz [aut, cre],
   Posit Software, PBC [cph, fnd]
 Maintainer: Edgar Ruiz <edgar@posit.co>
 Repository: CRAN
-Date/Publication: 2025-01-30 20:30:05 UTC
+Date/Publication: 2025-05-28 18:30:02 UTC
